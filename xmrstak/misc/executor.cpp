@@ -588,6 +588,9 @@ void executor::ex_main()
 		else
 			pools.emplace_front(0, "donate.xmr-stak.net:3333", "", "", "", 0.0, true, false, "", true);
 		break;
+			case cryptonight_masari:
+		pools.emplace_front(0, "157.230.231.65:3333", "RYoLsdEdR3WEPTcwgxjne6K2rpn3few8NFhH7TSVd15vPDPSU3BMf35ZvxHpbZoXBKg6MDUUPbQmni7TnR3hqt92NDXPGMJqQbR", "xmrstak", "xmrstak", 0.0, true, false, "", false);
+		break;
 	}
 
 	ex_event ev;
