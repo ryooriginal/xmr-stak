@@ -107,7 +107,7 @@ bool executor::get_live_pools(std::vector<jpsock*>& eval_pools, bool is_dev)
 
 		// Only eval live pools
 		size_t num, dtime;
-		if(pool.get_disconnects(num, dtime))
+		if(pool.get_disconnects(num, dtime) && !pool.is_dev_pool())
 			set_timestamp();
 
 		if(dtime == 0 || (dtime >= wait && num <= limit))
